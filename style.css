@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    max-width: 960px;
+    height: 50px;
+
+    background-color: green; 
+    background-image: radial-gradient(green, lightblue, lightgreen);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p {
+    font-size: 14pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+section {
+    margin-top: 10px;
+    width: 960px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+
+    margin-top: 8px;
+    display: flex;
+}
+
+.general {
+    border: 1px dotted black;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding: 0 20px 0 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.img-plan {
+    width: 80px;
+}
+
+.about-plan {
+    background-color: lightblue;
+    border-radius: 8px 0 0 8px ;
+    font-size: 12pt;
+
+    width: 400px;
+    height: 160px;
+}
+
+.about-plan h1,p {
+    padding-top: 20px;
+}
+
+.about-roof {
+    background-color: lightgreen;
+    border-radius: 0 8px 8px 0;
+
+    width: 400px;
+    height: 160px;
+}
+
+.about-roof h1 {
+    padding-top: 20px;
+}
+
+.about-roof ul, ol {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 10pt;
+}
+
+.about-roof a {
+    text-decoration: none;
+}
+
+.about-roof a:visited {
+    color: green;
+}
+
+.image-profile {
+    width: 100%;
+    max-width: 150px;
+
+    height: 160px;
+    margin-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.image-profile p {
+    font-size: 8pt;
+}
+
+@media (max-width: 1024px ) {
+    header {
+        width: 90%;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .about-plan {
+        width: 50%;
+    }
+
+    .about-roof {
+        width: 50%;
+    }
+}
+
+@media (max-width: 930px) {
+    .about-plan {
+        font-size: 11pt;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-profile {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        display: none;
+    }
+
+    .about-plan h1 {
+        padding-top: 20px;
+        font-size: 12pt;
+    }
+
+    .about-plan p {
+        font-size: 10pt;
+        padding-top: 10px;
+    }
+    
+    .about-roof h1 {
+        padding-top: 20px;
+        font-size: 12pt;
+    }
+
+    .about-roof ul, ol {
+        padding-top: 10px;
+    }
+
+    .about-roof a {
+        font-size: 9pt;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .container {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .about-plan.general {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .about-roof.general {
+        width: 100%;
+    }
+
+    .general {
+        border: none;
+        box-shadow: none;
+    }
+
+    .about-plan {
+        border-radius: 0;
+    }
+
+    .about-plan h1 {
+        font-size: 13pt;
+    }
+
+    .about-plan p {
+        font-size: 11pt;
+    }
+
+    .about-roof {
+        border-radius: 0;
+    }
+    
+    .about-roof h1 {
+        font-size: 13pt;
+    }
+
+    .about-roof ul, ol {
+        font-size: 11pt;
+    }
+
+    .about-roof a {
+        font-size: 10pt;
+    }
+
+}
+
+
