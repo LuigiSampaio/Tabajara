@@ -122,6 +122,25 @@ section {
     font-size: 8pt;
 }
 
+
+.text-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.text {
+    font-size: 10pt;
+    text-align: justify;
+    width: 50%;
+}
+
+.text-container .text:nth-child(2) {
+    padding-left: 10px;    
+}
+
+
+
+
 @media (max-width: 1024px ) {
     header {
         width: 90%;
@@ -178,6 +197,10 @@ section {
 
     .about-roof a {
         font-size: 9pt;
+    }
+
+    .text-container {
+        display: none;
     }
 }
 
